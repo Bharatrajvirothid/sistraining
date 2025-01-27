@@ -1,0 +1,358 @@
+/* Header styles */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+/* .nav__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1A1A1A;
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font here */
+/* }  */
+
+/* Nav container */
+.nav {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 4rem;
+    padding: 1rem 2rem;
+}
+
+/* Logo */
+.nav__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+.nav__logo-img {
+    width: 40px; /* Adjust to match logo size */
+    margin-right: 10px;
+}
+
+/* Menu Toggle for mobile */
+.nav__toggle {
+    font-size: 2rem;
+    color: var(--title-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu styling */
+.nav__menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link {
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #e12454; /* Hover color */
+}
+
+/* Search, Cart, and Contact button */
+.nav__icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__search-icon,
+.nav__cart-icon {
+    color: #000;
+    cursor: pointer;
+}
+
+.nav__cta {
+    background-color: #e12454;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta__icon {
+    background-color: white;
+    color: #e12454;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Mobile view */
+@media (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem;
+        flex-direction: column;
+        gap: 2rem;
+        transition: right 0.4s;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav__icons {
+        flex-direction: column;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 1150px) {
+    .nav__menu {
+        position: static;
+        background-color: transparent;
+        gap: 2.5rem;
+    }
+
+    .nav__list {
+        flex-direction: row;
+    }
+
+    .nav__icons {
+        gap: 1.5rem;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__cta {
+        padding: 0.5rem 2rem;
+    }
+}
+/* Close button inside the mobile menu */
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hide by default */
+}
+
+/* Mobile view */
+@media (max-width: 1150px) {
+    .nav__close {
+        display: block; /* Show only on mobile */
+    }
+}
+.nav__link:hover {
+    color: #4CAF50; /* Change hover color to green */
+}
+
+.nav__cta:hover {
+    background-color: #4CAF50; /* Change button background on hover */
+    color: white; /* Ensure text remains white */
+}
+
+/* Optional: Change icon color on hover */
+.nav__search-icon:hover,
+.nav__cart-icon:hover {
+    color: #4CAF50; /* Change icon color to green on hover */
+}
+/* Close button inside the mobile menu */
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hide by default */
+}
+
+/* Mobile view */
+@media (max-width: 1150px) {
+    .nav__close {
+        display: block; /* Show only on mobile */
+    }
+}
+
+/* Navbar link hover effect */
+.nav__link:hover {
+    color: #4CAF50; /* Change hover color to green */
+}
+
+/* Button hover effect */
+.nav__cta:hover {
+    background-color: #4CAF50; /* Change button background on hover */
+    color: white; /* Ensure text remains white */
+}
+
+/* Optional: Change icon color on hover */
+.nav__search-icon:hover,
+.nav__cart-icon:hover {
+    color: #4CAF50; /* Change icon color to green on hover */
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav__logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav__icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav__cta {
+  display: inline-block;
+  background-color: #ff4081;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav__cta .cta__icon {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav__cta:hover {
+  background-color: #e03570;
+}
+
+.nav__toggle {
+  display: none;
+  font-size: 2rem;
+}
+
+@media (max-width: 1150px) {
+  .nav__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .show-menu {
+    display: flex;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+

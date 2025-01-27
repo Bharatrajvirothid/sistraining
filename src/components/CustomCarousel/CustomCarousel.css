@@ -1,0 +1,126 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-box {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-control {
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .nav__cta {
+    background-color: #e12454;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta__icon {
+    background-color: white;
+    color: #e12454;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+  
+.carousel {
+    position: relative;
+    overflow: hidden; /* Prevent overflow of animated elements */
+  }
+  
+  .text-box {
+    transform: translateY(100%); /* Initially position it below */
+    opacity: 0; /* Make it invisible initially */
+    transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+  }
+  
+  .carousel-container:hover .text-box {
+    transform: translateY(0); /* Slide into view */
+    opacity: 1; /* Fade in */
+  }
+
+
+  @keyframes vibrate {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+  
+  .vibrating-button {
+    animation: vibrate 0.5s infinite; /* 0.5s duration, infinite loop */
+  }
+
+  
+  @media (max-width: 600px) {
+    .carousel button {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .text-box h1 {
+      font-size: 40px;
+    }
+  
+    .text-box p {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
