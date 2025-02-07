@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Badge, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
+import image from "../../Assets/Images/sistraining-in-wp-content-uploads-2018-01-sis-logo-png.jpg"
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -97,7 +98,7 @@ const Navbar = () => {
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
           <img
-            src="http://sistraining.in/wp-content/uploads/2018/01/sis-logo.png"
+            src={image}
             alt="Logo"
             className="nav__logo-img"
           />
