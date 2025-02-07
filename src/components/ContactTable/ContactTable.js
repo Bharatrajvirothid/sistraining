@@ -87,7 +87,7 @@ const ContactTable = () => {
               Welding & Painting, ISO Certified Courses
             </td>
             <td style={{ ...thTdStyle, ...responsiveThTdStyle }}>
-              (+91) 98491 93532<br /> (+91) 98491 93532
+              (+91) 98491 93532
             </td>
           </tr>
         </tbody>

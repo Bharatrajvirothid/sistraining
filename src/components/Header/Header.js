@@ -38,7 +38,7 @@ function  Header() {
             {/* Working Hours */}
             <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
               <AccessTimeIcon style={{ color: "#90EE90" }} />
-              <span>08:00am - 09:00pm</span>
+              <span>09:00am - 06:00pm</span>
             </div>
 
             {/* Vertical Line */}
@@ -73,7 +73,7 @@ function  Header() {
             {/* Phone Number */}
             <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
               <PhoneIcon style={{ color: "#90EE90" }} />
-              <span>+0123 (456) 789</span>
+              <span> +91 7702346456</span>
             </div>
           </Grid>
         </Grid>

@@ -112,68 +112,72 @@ const CustomCarousel = () => {
           }}
         >
           <div className="text-box" style={{ padding: "20px", maxWidth: "600px", marginLeft: "50px" }}>
-            {headingVisible && (
-              <h1
-                style={{
-                  color: "white",
-                  fontSize: "clamp(30px, 4vw, 50px)", // Reduced responsive font size
-                  fontWeight: "bold",
-                  margin: "0",
-                  lineHeight: "1.2",
-                }}
-              >
-                {slider[currentIndex]?.slider_heading}
-              </h1>
-            )}
+  {headingVisible && (
+    <h1
+      style={{
+        color: "white",
+        fontSize: "clamp(24px, 5vw, 40px)", // Increased font size
+        fontWeight: "bold",
+        margin: "0",
+        lineHeight: "1",
+        whiteSpace: "nowrap", // Ensure text remains in a single line
+        overflow: "visible", // Allow full text to be displayed
+        textOverflow: "clip", // Prevent ellipsis from appearing
+      }}
+    >
+      {slider[currentIndex]?.slider_heading}
+    </h1>
+  )}
 
-            {paragraphVisible && (
-              <p
-                style={{
-                  fontSize: "clamp(16px, 2vw, 22px)", // Responsive paragraph size
-                  marginTop: "10px",
-                  color: "black",
-                  fontWeight:"bold"
-                }}
-              >
-                {slider[currentIndex]?.slider_paragraph}
-              </p>
-            )}
+  {paragraphVisible && (
+    <p
+      style={{
+        fontSize: "clamp(16px, 2vw, 22px)", // Responsive paragraph size
+        marginTop: "10px",
+        color: "black",
+        fontWeight: "bold"
+      }}
+    >
+      {slider[currentIndex]?.slider_paragraph}
+    </p>
+  )}
 
-            {/* Buttons Section */}
-            {buttonsVisible && (
-              <div style={{ marginTop: "20px", display: "flex", alignItems: "center" }}>
-                <Button
-                  style={{
-                    backgroundColor: "#e12454",
-                    color: "#fff",
-                    borderRadius: "50px",
-                    padding: "10px 20px",
-                    fontSize: "clamp(14px, 1.5vw, 16px)", // Responsive button size
-                    fontWeight: "bold",
-                    marginRight: "20px",
-                  }}
-                >
-                  Our Services
-                </Button>
-                <Button
-                  className="vibrating-button" // Add the class here
-                  style={{
-                    backgroundColor: "#4CAF50",
-                    color: "#fff",
-                    borderRadius: "50%",
-                    padding: "10px",
-                    minWidth: "60px",
-                    height: "60px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <PlayCircleIcon style={{ fontSize: "36px" }} />
-                </Button>
-              </div>
-            )}
-          </div>
+  {/* Buttons Section */}
+  {buttonsVisible && (
+    <div style={{ marginTop: "20px", display: "flex", alignItems: "center" }}>
+      <Button
+        style={{
+          backgroundColor: "#e12454",
+          color: "#fff",
+          borderRadius: "50px",
+          padding: "10px 20px",
+          fontSize: "clamp(14px, 1.5vw, 16px)", // Responsive button size
+          fontWeight: "bold",
+          marginRight: "20px",
+        }}
+      >
+        Our Services
+      </Button>
+      <Button
+        className="vibrating-button" // Add the class here
+        style={{
+          backgroundColor: "#4CAF50",
+          color: "#fff",
+          borderRadius: "50%",
+          padding: "10px",
+          minWidth: "60px",
+          height: "60px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <PlayCircleIcon style={{ fontSize: "36px" }} />
+      </Button>
+    </div>
+  )}
+</div>
+
         </div>
 
         <button

@@ -68,7 +68,7 @@
 
 .nav__link {
     color: #000;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -355,4 +355,170 @@
   cursor: pointer;
 }
 
+/* Navbar.css */
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .nav__item:hover .nav__dropdown {
+    display: block;
+  }
+  
+  .nav__dropdown-link {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav__dropdown-link:hover {
+    background-color: #f5f5f5;
+  }
+/* Navbar.css */
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .nav__dropdown-link {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav__dropdown-link:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .nav__subdropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .nav__dropdown-link:hover .nav__subdropdown {
+    display: block;
+  }
+  
+  .nav__subdropdown-link {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav__subdropdown-link:hover {
+    background-color: #f5f5f5;
+  }
+  .nav__dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    white-space: nowrap; /* Ensures content stays in one line */
+    min-width: 200px; /* Adjust width as per your design needs */
+}
 
+.nav__item:hover .nav__dropdown {
+    display: block;
+}
+
+.nav__dropdown-link {
+    padding: 10px 20px;
+    display: inline-block; /* Make the link inline so it stays in one row */
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.nav__dropdown-link:hover {
+    background-color: #f5f5f5;
+}
+.nav__dropdown-link {
+    padding: 10px 20px;
+    display: inline-block; /* Make the link inline so it stays in one row */
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav__dropdown-link {
+    padding: 10px 20px;
+    display: block;
+    width: 85%;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative; /* To position the arrow */
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.85rem;
+}
+
+.nav__dropdown-link:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+.nav__dropdown-link::after {
+
+    font-size: 0.5rem; /* Adjust the size of the arrow */
+    color: #333; /* Arrow color */
+    position: absolute;
+    right: 10px; /* Position the arrow at the end */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the arrow */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.nav__dropdown-link:hover::after {
+    color: white; /* Change arrow color on hover */
+}
+.nav__dropdown-right {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  list-style: none;
+}
+
+.nav__dropdown-right li {
+  margin: 5px 0;
+}
+
+.nav__dropdown-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav__dropdown-link:hover {
+  color: white;
+}
