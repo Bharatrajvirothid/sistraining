@@ -98,7 +98,7 @@ const Navbar = () => {
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
           <img
-            src={image}
+            src="http://sistraining.in/wp-content/uploads/2018/01/sis-logo.png"
             alt="Logo"
             className="nav__logo-img"
           />
