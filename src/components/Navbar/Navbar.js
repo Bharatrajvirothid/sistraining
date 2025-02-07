@@ -5,7 +5,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import image from "../../Assets/Images/sistraining-in-wp-content-uploads-2018-01-sis-logo-png.jpg"
 import "./Navbar.css";
-
+import  {useLottie}  from "lottie-react";
+import groovyWalkAnimation from "./../../Assets/Images/Animation - 1738953752217 (1).json";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [hoveredCourse, setHoveredCourse] = useState(null);
@@ -93,8 +94,38 @@ const Navbar = () => {
     },
   ];
 
+  const inspectionServices = [
+    "Advanced NDT Inspection Support",
+    "Conventional NDT Inspection Support",
+    "API Inspection Support",
+    "Vendor Inspection Support",
+    "Welding Inspection Support",
+  ];
+
+  const resourcing = [
+    "API Inspectors Certified to 510,570,580,653,986",
+    "QA/ QC Inspectors / Engineers/ Supervisors",
+    "Welding Inspectors- CSWIP 3.1/ 3.2 / AWS Certified",
+    "Painting Inspectors – NACE;BGAS ,ICORR",
+    "Advanced NDT Level III ISO 9712 / PCN/ASNT Certified",
+    "Advanced NDT Level II ISO 9712 / PCN / ASNT Certified",
+    "Welding Engineers",
+    "Supervisors",
+    "Welders",
+    "Insulators",
+    "Pipe Fitters",
+    "NDT Technicians Conventional and Advanced",
+  ];
+  const options = {
+    animationData: groovyWalkAnimation,
+    loop: true
+  };
+
+  const { View } = useLottie(options);
+
   return (
     <header className="header">
+     {/* <div>{View}</div> */}
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
           <img
@@ -156,22 +187,32 @@ const Navbar = () => {
               </div>
             </li>
             <li className="nav__item">
-              <NavLink
-                to="/inspection-services"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
+            <div className="nav__link">
                 Inspection Services
-              </NavLink>
+                <ul className="nav__dropdown">
+                  {inspectionServices.map((service, index) => (
+                    <li key={index} className="nav__dropdown-item">
+                      <NavLink to={`/inspection-service-${index + 1}`} className="nav__dropdown-link">
+                        {service}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </li>
             <li className="nav__item">
-              <NavLink
-                to="/resourcing"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
+            <div className="nav__link">
                 Resourcing
-              </NavLink>
+                <ul className="nav__dropdown">
+                  {resourcing.map((resource, index) => (
+                    <li key={index} className="nav__dropdown-item">
+                      <NavLink to={`/resourcing-${index + 1}`} className="nav__dropdown-link">
+                        {resource}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </li>
             <li className="nav__item">
               <NavLink
