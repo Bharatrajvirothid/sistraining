@@ -27,6 +27,7 @@
 }
 
 /* Logo */
+
 .nav__logo {
     display: flex;
     align-items: center;
@@ -437,12 +438,15 @@
     position: absolute;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 1001;
     padding: 0;
     margin: 0;
     list-style: none;
     white-space: nowrap; /* Ensures content stays in one line */
     min-width: 200px; /* Adjust width as per your design needs */
+}
+.nav__dropdown-item{
+  z-index:20000;  
 }
 
 .nav__item:hover .nav__dropdown {
@@ -522,3 +526,4 @@
 .nav__dropdown-link:hover {
   color: white;
 }
+

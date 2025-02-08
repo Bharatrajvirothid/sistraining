@@ -18,3 +18,21 @@
     margin-left: 15px;
   }
    */
+   @keyframes moveLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .moving-text {
+    position: absolute;
+    top: 10px;
+    white-space: nowrap;
+    animation: moveLeft 10s linear infinite;
+    font-size: 16px;
+    color: #000;
+  }
+  

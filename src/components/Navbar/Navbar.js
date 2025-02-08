@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Badge, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-import image from "../../Assets/Images/sistraining-in-wp-content-uploads-2018-01-sis-logo-png.jpg"
+import image from "../../Assets/Images/sis-logo.png"
 import "./Navbar.css";
 import  {useLottie}  from "lottie-react";
 import groovyWalkAnimation from "./../../Assets/Images/Animation - 1738953752217 (1).json";
@@ -124,12 +124,13 @@ const Navbar = () => {
   const { View } = useLottie(options);
 
   return (
+    <div>
     <header className="header">
      {/* <div>{View}</div> */}
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
           <img
-            src="http://sistraining.in/wp-content/uploads/2018/01/sis-logo.png"
+            src={image}
             alt="Logo"
             className="nav__logo-img"
           />
@@ -267,6 +268,10 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
+    
+
+    </div>
+
   );
 };
 

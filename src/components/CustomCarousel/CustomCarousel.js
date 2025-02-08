@@ -4,7 +4,8 @@ import { Grid, Button } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import image from "../../Assets/Images/Types_of_Welders_for_Home_Use.webp"
+import image from "../../Assets/Images/Types_of_Welders_for_Home_Use.webp";
+import { motion } from "framer-motion";
 const CustomCarousel = () => {
   const [slider, setSlider] = useState([]);
   const [headingVisible, setHeadingVisible] = useState(false);
@@ -73,6 +74,13 @@ const CustomCarousel = () => {
   }, [currentIndex]);
 
   return (
+    <div>
+       <div className="moving-text">
+       Southern Inspection Services Private Ltd is an accredited course provider with ACP No. 1037 for NEBOSH (UK) – IGC.IO
+</div>
+
+    
+    
     <Grid container sx={{ backgroundColor: "#e6e6e6", width: "100vw", margin: 0, padding: 0 }}>
       <Grid item xs={12} className="carousel-container">
         <button
@@ -201,6 +209,7 @@ const CustomCarousel = () => {
         </button>
       </Grid>
     </Grid>
+    </div>
   );
 };
 
