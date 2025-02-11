@@ -11,6 +11,7 @@ function MainContact() {
     <div>
         <Header/>
         {/* <Navbar/> */}
+    
         <ContactSection/>
         <ContactTable/>
         <GoogleMapComponent/>
