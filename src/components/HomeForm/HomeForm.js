@@ -16,23 +16,23 @@ import WorkIcon from '@mui/icons-material/Work';
 
 const statistics = [
   {
-    label: 'Professional Doctors',
-    value: 3568,
+    label: 'Professional Trainees',
+    value: 1034,
     icon: <MedicalServicesIcon sx={{ fontSize: 50, color: '#8bc34a' }} />,
   },
   {
-    label: 'Digital Laboratory',
-    value: 9632,
+    label: 'Trainers',
+    value: 232,
     icon: <ScienceIcon sx={{ fontSize: 50, color: '#8bc34a' }} />,
   },
   {
     label: 'Years Of Experience',
-    value: 38,
+    value: 23,
     icon: <WorkIcon sx={{ fontSize: 50, color: '#8bc34a' }} />,
   },
   {
     label: 'Winning Awards',
-    value: 463,
+    value: 120,
     icon: <EmojiEventsIcon sx={{ fontSize: 50, color: '#8bc34a' }} />,
   },
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Grid, Typography, TextField, Button, Link } from '@mui/material';
 import { Facebook, Twitter, LinkedIn, Instagram, Email, LocationOn, Phone } from '@mui/icons-material';
+import ima from '../../Assets/Images/sis-logo.png'
 
 const Footer = () => {
   return (
@@ -11,8 +12,8 @@ const Footer = () => {
           {/* Logo and Subscription */}
           <Grid item xs={12} md={4}>
             <Typography variant="h4" component="div" sx={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
-              <img src="logo-url-here" alt="Logo" style={{ marginRight: '10px', width: '50px', height: 'auto' }} />
-              Doctio
+              <img src={ima} alt="Logo" style={{ marginRight: '10px', width: '50px', height: 'auto' }} />
+              SIS
             </Typography>
             <Typography variant="h6" sx={{ fontSize: '1rem', marginBottom: '1rem' }}>
               Subscribe:
@@ -39,7 +40,7 @@ const Footer = () => {
               </Button>
             </Box>
             <Typography variant="body2" sx={{ marginTop: '1rem', color: 'green' }}>
-              5M+ Satisfied Clients
+              10k+ Satisfied Clients
             </Typography>
           </Grid>
 
@@ -49,7 +50,7 @@ const Footer = () => {
               About Us
             </Typography>
             <Typography variant="body2" sx={{ marginBottom: '1rem' }}>
-              It is a long established fact that the read will be distracted by the readable content.
+            SIS is one of the global leading Advanced and Conventional NDT Inspection Services Company
             </Typography>
             <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>
               Find Us On:
@@ -83,11 +84,11 @@ const Footer = () => {
                   Department
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" color="inherit" underline="none">
                   Doctors
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="#" color="inherit" underline="none">
                   FAQ's
@@ -141,20 +142,22 @@ const Footer = () => {
             <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
               <LocationOn sx={{ marginRight: '10px', color: 'green' }} />
               <Typography variant="body2">
-                Obere Haltenstrasse, Lugaggia, Switzerland - 6953
+             
+Opp Ramatalkies Bus Stop,
+Vikram Milk Foods lane, Visakhapatnam.
               </Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
               <Email sx={{ marginRight: '10px', color: 'green' }} />
-              <Typography variant="body2">no@themedraft.net</Typography>
+              <Typography variant="body2">training@sistraining.in</Typography>
             </Box>
-            <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+            {/* <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
               <Email sx={{ marginRight: '10px', color: 'green' }} />
               <Typography variant="body2">replay@themedraft.net</Typography>
-            </Box>
+            </Box> */}
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Phone sx={{ marginRight: '10px', color: 'green' }} />
-              <Typography variant="body2">+410 123 456 789</Typography>
+              <Typography variant="body2">+91 9849193532</Typography>
             </Box>
           </Grid>
 
@@ -163,7 +166,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
           <Typography variant="body2">
-            &copy; Doctio 2022 | All Rights Reserved
+            &copy; SIS 2022 | All Rights Reserved
           </Typography>
         </Box>
       </Container>

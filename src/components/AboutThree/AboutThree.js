@@ -92,10 +92,9 @@ const AboutThree = () => {
         <h2 style={headingStyle}>Why Choose Us</h2>
         <h3 style={subHeadingStyle}>Have Any Questions? Feel Free To Ask.</h3>
         <p style={textStyle}>
-          Sed ut pers piciat is unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi and 
-          <a href="#" style={linkStyle}> visit our service page </a> architecto beatae vitae dicta sunt explicabo.
+         As SIS delivers globally recognised accredited Training & Certification courses like :  BINDT- United Kingdom, CSWIP Ltd- United Kingdom, NEBOSH – United Kingdom, IOSH- United Kingdom, ASNT – USA, AWS- USA, API- USA, ASME- USA, LEEA- UK, CITB- UK, IRCA_ UK, IRATA-UK.
         </p>
-        <span style={readMoreStyle}>Read More &gt;&gt;</span>
+        
       </div>
 
       {/* Accordion Section */}

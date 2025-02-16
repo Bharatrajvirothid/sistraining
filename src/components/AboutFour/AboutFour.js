@@ -28,7 +28,7 @@ const AboutFour = () => {
 
   return (
     <div className="doctors-section">
-      <h2>Meet Our Team</h2>
+      {/* <h2>Meet Our Team</h2>
       <h3>Our Expert Doctors</h3>
       <div className="doctors-grid">
         {doctors.map((doctor, index) => (
@@ -38,8 +38,8 @@ const AboutFour = () => {
             specialization={doctor.specialization}
             imageUrl={doctor.imageUrl}
           />
-        ))}
-      </div>
+        ))} */}
+      {/* </div> */}
     </div>
   );
 };

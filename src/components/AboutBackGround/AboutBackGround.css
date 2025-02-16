@@ -1,7 +1,7 @@
 /* General styles for the hero section */
 .hero-container {
     position: relative;
-    background-image: url('https://i.pinimg.com/736x/8a/c7/32/8ac732633422162fe84d22ece15905ad.jpg'); /* Set your image here */
+    background-image: url(../../Assets/Images/bf3b0769b789888062dd4bdb4a80c8df.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -10,6 +10,9 @@
     align-items: center;
     padding: 0 20px;
     color: white;
+  }
+  .normal-text{
+    font-size: 20px;
   }
   
   /* Content wrapper for the text section */

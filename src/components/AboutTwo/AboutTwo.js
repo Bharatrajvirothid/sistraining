@@ -99,17 +99,17 @@ const AboutTwo = () => {
       <div style={statisticsStyle}>
         <div style={statItemStyle}>
           <i style={statIconStyle} className="icon-doctor"></i>
-          <h3 style={statHeadingStyle}>568+</h3>
-          <p style={statTextStyle}>Professional Doctors</p>
+          <h3 style={statHeadingStyle}>1086+</h3>
+          <p style={statTextStyle}>Professional Trainees</p>
         </div>
         <div style={statItemStyle}>
           <i style={statIconStyle} className="icon-lab"></i>
-          <h3 style={statHeadingStyle}>963+</h3>
-          <p style={statTextStyle}>Digital Laboratory</p>
+          <h3 style={statHeadingStyle}>269+</h3>
+          <p style={statTextStyle}>Trainers</p>
         </div>
         <div style={statItemStyle}>
           <i style={statIconStyle} className="icon-experience"></i>
-          <h3 style={statHeadingStyle}>38+</h3>
+          <h3 style={statHeadingStyle}>23 +</h3>
           <p style={statTextStyle}>Years Of Experience</p>
         </div>
         <div style={statItemStyle}>
@@ -121,30 +121,30 @@ const AboutTwo = () => {
 
       {/* Services Section */}
       <div style={servicesStyle}>
-        <h2>Service We Provide</h2>
+        <h2>Courses We Provide</h2>
         <div style={serviceCardsStyle}>
           <div style={serviceCardStyle}>
             <i style={serviceIconStyle} className="icon-neuro"></i>
-            <h3 style={serviceHeadingStyle}>Neuro Surgery</h3>
-            <p style={serviceTextStyle}>Sit consectetur adipiscin elit sed do eiusmod tempor</p>
+            <h3 style={serviceHeadingStyle}>NDT And Advance NDT</h3>
+            <p style={serviceTextStyle}></p>
             <a href="#" style={readMoreStyle}>Read More</a>
           </div>
           <div style={serviceCardStyle}>
             <i style={serviceIconStyle} className="icon-dental"></i>
-            <h3 style={serviceHeadingStyle}>Dental Surgery</h3>
-            <p style={serviceTextStyle}>Sit consectetur adipiscin elit sed do eiusmod tempor</p>
+            <h3 style={serviceHeadingStyle}>Welding Inspection</h3>
+            <p style={serviceTextStyle}></p>
             <a href="#" style={readMoreStyle}>Read More</a>
           </div>
           <div style={serviceCardStyle}>
             <i style={serviceIconStyle} className="icon-plastic"></i>
-            <h3 style={serviceHeadingStyle}>Plastic Surgery</h3>
-            <p style={serviceTextStyle}>Sit consectetur adipiscin elit sed do eiusmod tempor</p>
+            <h3 style={serviceHeadingStyle}>Painting Inspection</h3>
+            <p style={serviceTextStyle}></p>
             <a href="#" style={readMoreStyle}>Read More</a>
           </div>
           <div style={serviceCardStyle}>
             <i style={serviceIconStyle} className="icon-heart"></i>
-            <h3 style={serviceHeadingStyle}>Heart Surgery</h3>
-            <p style={serviceTextStyle}>Sit consectetur adipiscin elit sed do eiusmod tempor</p>
+            <h3 style={serviceHeadingStyle}>Nebosh IGC</h3>
+            <p style={serviceTextStyle}></p>
             <a href="#" style={readMoreStyle}>Read More</a>
           </div>
         </div>

@@ -1,61 +1,55 @@
 import React from 'react';
+import image from '../../Assets/Cortec Middle East leads in providing top-tier….jpg'
 
 const AboutOne = () => {
   return (
     <div style={styles.container}>
       {/* Left Column */}
       <div style={styles.leftColumn}>
-        <h5 style={styles.subHeading}>About Doctio</h5>
+        <h5 style={styles.subHeading}>About Sis</h5>
         <h1 style={styles.mainHeading}>
-          We Caring Your Family Health & Well Being
+        SIS is an ISO 9001: 2015 certified organisation
         </h1>
         <p style={styles.description}>
-          Aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo 
-          <span style={styles.highlightText}> our services for our patients </span>
-          ipsam ab illo inventore veritatis etion and we have 25 years of experience.
+         
+SIS is one of the global leading  Advanced and Conventional NDT Inspection Services Company
+          <span style={styles.highlightText}> Training and Certification in NDT  </span>
+           Advanced NDT, Welding  Inspection and Painting Inspection, Health and Safety, Quality Management Systems, Vendor Inspection with Consultancy, SIS is an ISO 9001: 2015 certified organisation.
         </p>
 
-        {/* Features */}
-        <div style={styles.features}>
-          <div style={styles.featureItem}>
-            <img src="https://i.pinimg.com/236x/d3/78/23/d37823d19ccb3745e1ea7f3f9ea1186c.jpg" alt="Best Medical Care" style={styles.icon} />
-            <div>
-              <h4 style={styles.featureTitle}>Best Medical Care</h4>
-              <p style={styles.featureDescription}>
-                Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil molestiae consequatur.
-              </p>
-            </div>
-          </div>
-          <div style={styles.featureItem}>
-            <img src="https://i.pinimg.com/236x/d3/78/23/d37823d19ccb3745e1ea7f3f9ea1186c.jpg" alt="Modern Diagnostic" style={styles.icon} />
-            <div>
-              <h4 style={styles.featureTitle}>Modern Diagnostic</h4>
-              <p style={styles.featureDescription}>
-                Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil molestiae consequatur.
-              </p>
-            </div>
-          </div>
-        </div>
+        <p style={styles.description}>
+         
+        Southern Inspection Services Private limited, Visakhapatnam started its operations with a vision to cater the Industrial Sector in the year 2002 as a proprietary firm initiating with Training and Certification in Non-Destructive Testing serving local, National and International well recognized Organization proving a professional skill development in personnel’s up to more than 10,00,000 Technicians, Engineers, Inspectors, Inspection Engineers and Fresher’s. 
+          
+        </p>
 
-        {/* Button and Contact */}
-        <div style={styles.contactInfo}>
-          <button style={styles.contactButton}>Click Here</button>
-          <p style={styles.phoneNumber}>
-            <span>+012 (345) 6789</span>
-          </p>
-        </div>
+        <p style={styles.description}>
+         
+        Upon demand on service category we moved on one step ahead creating a success in Advanced Non-Destructive Testing, Vendor Inspections, Welding & Painting Inspections, Plant Inspection, Asset Integrity Management, Post Weld Heat Treatment, Positive Material Analysis (PMI), Third Party Inspection, Advanced NDT Services (ECT Tube Inspection, PAUT, TOFD, MFL, LRUT), Rope Access NDT and other allied services like supply of NDT and ANDT Technicians, API Inspectors, QA/QC Inspectors, Welding and painting Inspectors, NDT level III,PCN / ISO 9712 Qualified Personnel to meet the Industry requirement for major Turnarounds.
+           
+         </p>
+         <p style={styles.description}>
+         
+         SIS Founded on 31 Dec 2002, with a vision to cater the needs of individual Personnel Training and Certification –, Industrial Inspection Services, Human Resource Consultancy, 2nd & Third Party & Vendor Inspection, In-service Inspection, Research and Development.                   
+         </p>
+         <p style={styles.description}>
+         
+         In 2010 SIS has further stepped by converting the company to a Private Limited Company from a proprietary concern by adding to new Director(s) with a dedicated vision and QHSE policy and certified to an ISO 9001: 2015 QMS certified Organisation for the growth and success of the company and meeting the service requirements of our clientele and personnel.
+         </p>
+
+      
       </div>
 
       {/* Right Column */}
       <div style={styles.rightColumn}>
         <div style={styles.experienceCard}>
           <p style={styles.experienceText}>
-            <span style={styles.experienceNumber}>25</span>
+            <span style={styles.experienceNumber}>23</span>
             <br />
-            Years Of Experience in Medical Services
+            Years Of Experience in Training and Certification in NDT.
           </p>
         </div>
-        <img src="https://i.pinimg.com/236x/d3/78/23/d37823d19ccb3745e1ea7f3f9ea1186c.jpg" alt="Doctors" style={styles.image} />
+        <img src={image} alt="Doctors" style={styles.image} />
       </div>
     </div>
   );
@@ -78,7 +72,7 @@ const styles = {
   subHeading: {
     color: '#f65d65',
     fontWeight: 'bold',
-    fontSize: '16px',
+    fontSize: '25px',
   },
   mainHeading: {
     color: '#1a1a1a',

@@ -217,7 +217,7 @@ const Navbar = () => {
             </li>
             <li className="nav__item">
               <NavLink
-                to="/shop"
+                to="/schedules"
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >

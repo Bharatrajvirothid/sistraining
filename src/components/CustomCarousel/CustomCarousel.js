@@ -6,7 +6,10 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import image from "../../Assets/Images/Types_of_Welders_for_Home_Use.webp";
 import { motion } from "framer-motion";
-import img from "../../Assets/Images/Certified Logo.jpg"
+import one from "../../Assets/Images/one.jpg";
+import two from "../../Assets/Images/two.jpg";
+import three from "../../Assets/Images/three.jpg";
+import img from "../../Assets/Images/Certified Logo.jpg";
 const CustomCarousel = () => {
   const [slider, setSlider] = useState([]);
   const [headingVisible, setHeadingVisible] = useState(false);
@@ -17,18 +20,18 @@ const CustomCarousel = () => {
     const jsonData = [
       {
         slider_heading: "Southern Inspection Services Private limited.",
-        slider_paragraph: "We’ve 25 Years of experience in Training and Certification in NDT.",
-        slider_image: image
+        slider_paragraph: "We’ve 23 Years of experience in Training and Certification in NDT.",
+        slider_image: one
       },
       {
         slider_heading: "Certified NDT Courses",
         slider_paragraph: "Get certified in Non-Destructive Testing techniques.",
-        slider_image: "https://demo.themedraft.net/wp/doctio/wp-content/uploads/2022/06/home-1-slider-1.jpg",
+        slider_image: two,
       },
       {
         slider_heading: "Welding Inspection Services",
         slider_paragraph: "Our professional welding inspection ensures high standards and safety.",
-        slider_image: "https://i.pinimg.com/236x/1f/73/0b/1f730b93c7d7dee47040eb80e4ea644b.jpg",
+        slider_image: three,
       },
     ];
 

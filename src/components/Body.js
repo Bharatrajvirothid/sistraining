@@ -8,6 +8,7 @@ import Login from './Login/Login'
 import AboutComp from './AboutComp/AboutComp'
 // import './styles.css'
 import MainContact from './MainContact/MainContact'
+import Schedules from './Schedules/Schedules'
 
 const Body = () => {
 
@@ -24,6 +25,10 @@ const Body = () => {
         {
           path: "/about-us",
           element:<AboutComp/>
+      },
+      {
+        path: "/schedules",
+        element:<Schedules/>
       }
     ])
   return (
